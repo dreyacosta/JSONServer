@@ -1,0 +1,38 @@
+{
+  "name": "JSONServer",
+  "version": "0.0.1",
+  "description": "Small JSON Server for REST API mocking",
+  "preferGlobal": true,
+  "bin": {
+    "jsonserver": "index.js"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "Server",
+    "JSON",
+    "REST",
+    "API"
+  ],
+  "author": "@dreyacosta",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "^0.4.4",
+    "grunt-contrib-coffee": "^0.10.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.10.2",
+    "supertest": "^0.12.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.0.2",
+    "coffee-script": "^1.7.1",
+    "connect-multiparty": "^1.0.3",
+    "express": "^4.1.1",
+    "minimist": "0.0.8",
+    "morgan": "^1.0.0",
+    "somewhere": "0.0.1"
+  }
+}
