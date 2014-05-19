@@ -1,5 +1,5 @@
 {
-  "name": "JSONServer",
+  "name": "jsonserver",
   "version": "0.1.0",
   "description": "Small JSON Server for REST API mocking",
   "preferGlobal": true,
