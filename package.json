@@ -1,14 +1,14 @@
 {
   "name": "JSONServer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Small JSON Server for REST API mocking",
   "preferGlobal": true,
   "bin": {
     "jsonserver": "index.js"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test --verbose"
   },
   "keywords": [
     "Server",
@@ -16,6 +16,10 @@
     "REST",
     "API"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:dreyacosta/JSONServer.git"
+  },
   "author": "@dreyacosta",
   "license": "MIT",
   "devDependencies": {
