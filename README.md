@@ -1,5 +1,5 @@
-# JSONServer
-### Little JSON server
+# JSONServer [![Build Status](https://travis-ci.org/dreyacosta/JSONServer.svg?branch=master)](https://travis-ci.org/dreyacosta/JSONServer)
+Small JSON Server for REST API mocking
 
 ## Installation
 ```sh
