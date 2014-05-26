@@ -16,3 +16,41 @@ Change default server port:
 ```sh
 $ jsonserver --path path/to/file.json --port 5000
 ```
+
+## Entry points
+
+Return an array of items in a resource
+```
+GET /:resource
+```
+
+Return an array of items in a resource
+```
+GET /search/:resource
+```
+**Parameters**
+
+| Type   | Description                                        |
+| ------ |:--------------------------------------------------:|
+| JSON   | An object with the query (ex: `{genre: 'Action'}`) |
+
+
+Return a resource object matching with the ID
+```
+GET /:resource/:id
+```
+
+Create a new object on a resource
+````
+POST /:resource
+```
+
+Updated a resource object giving the ID
+```
+PUT /:resource/:id
+```
+
+Deleted a resource object giving the ID
+```
+DELETE /:resource/:id
+```
