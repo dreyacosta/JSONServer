@@ -44,7 +44,7 @@ exports.init = (options) ->
   app.put '/:resource/:id', (req, res) ->
     res.jsonp db.update req.params.resource, req.params.id, req.body
 
-  app.del '/:resource/:id', (req, res) ->
+  app.delete '/:resource/:id', (req, res) ->
     db.remove req.params.resource, req.params.id
     res.jsonp 200, {}
 
