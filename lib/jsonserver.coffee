@@ -12,7 +12,7 @@ exports.init = (options) ->
   bodyParser = require 'body-parser'
   multipart  = require 'connect-multiparty'
   logger     = require 'morgan'
-  db         = require 'somewhere'
+  DB         = require 'somewhere'
   app        = do express
 
   app.use do bodyParser
@@ -27,7 +27,7 @@ exports.init = (options) ->
     res.setHeader 'Access-Control-Allow-Origin', '*'
     do next
 
-  db.connect(options.path)
+  db = new DB options.path
 
   app.get '/:resource', (req, res) ->
     res.jsonp db.find req.params.resource
