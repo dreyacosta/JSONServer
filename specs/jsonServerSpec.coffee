@@ -59,6 +59,7 @@ describe "JSONServer", ->
       .end (err, res) ->
         return done err if err
         expect(res.statusCode).to.equal 200
+        expect(res.text).to.equal 'true'
         do done
 
   it "should delete database", ->
