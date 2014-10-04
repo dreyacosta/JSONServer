@@ -2,7 +2,7 @@
 
 expect     = require('chai').expect
 request    = require 'supertest'
-db         = require 'somewhere'
+DB         = require 'somewhere'
 jsonserver = require '../lib/jsonserver'
 
 app = jsonserver.init
@@ -62,4 +62,5 @@ describe "JSONServer", ->
         do done
 
   it "should delete database", ->
+    db = new DB 'test.json'
     do db.clear
