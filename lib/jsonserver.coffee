@@ -45,8 +45,8 @@ exports.init = (options) ->
     res.jsonp db.update req.params.resource, req.params.id, req.body
 
   app.delete '/:resource/:id', (req, res) ->
-    db.remove req.params.resource, req.params.id
-    res.jsonp 200, {}
+    response = db.remove req.params.resource, req.params.id
+    res.status(200).jsonp response
 
   if options.test
     return app
