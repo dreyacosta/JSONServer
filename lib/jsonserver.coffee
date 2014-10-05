@@ -15,7 +15,8 @@ exports.init = (options) ->
   DB         = require 'somewhere'
   app        = do express
 
-  app.use do bodyParser
+  app.use bodyParser.urlencoded extended: true
+  app.use do bodyParser.json
   app.use do multipart
   app.use do logger if log
 
