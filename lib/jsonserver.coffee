@@ -18,7 +18,7 @@ exports.init = (options) ->
   app.use bodyParser.urlencoded extended: true
   app.use do bodyParser.json
   app.use do multipart
-  app.use do logger if log
+  app.use logger 'combined' if log
 
   app.use (req, res, next) ->
     res.setHeader 'Access-Control-Allow-Credentials', true
