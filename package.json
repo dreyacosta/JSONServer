@@ -1,6 +1,6 @@
 {
   "name": "jsonserver",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Small JSON file server for REST API mock",
   "preferGlobal": true,
   "bin": {
