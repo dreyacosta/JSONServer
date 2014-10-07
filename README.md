@@ -157,5 +157,5 @@ Content-Length: 2
 Date: Sat, 31 May 2014 17:59:23 GMT
 Connection: keep-alive
 
-{}
+true
 ```
