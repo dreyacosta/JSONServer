@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "grunt test --verbose"
+    "test": "gulp test"
   },
   "keywords": [
     "Server",
